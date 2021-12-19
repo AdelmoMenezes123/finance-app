@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderComponent } from './components/template/header/header.component';
-import { FinanceCreateComponent } from './components/finance/finance-create/finance-create.component';
 import { FinanceReadComponent } from './components/finance/finance-read/finance-read.component';
 
 
@@ -29,18 +28,21 @@ import { HomeComponent } from './view/home/home.component';
 import { LoginComponent } from './view/login/login.component';
 import { CadastroComponent } from './view/cadastro/cadastro.component';
 import { FinanceCrudComponent } from './view/finance-crud/finance-crud.component';
+import { CreateComponent } from './components/usuario-crud/create/create.component';
+import { LoginUserComponent } from './components/usuario-crud/login-user/login-user.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FinanceCreateComponent,
     FinanceReadComponent,
     HomeComponent,
     LoginComponent,
     CadastroComponent,
     FinanceCrudComponent,
+    CreateComponent,
+    LoginUserComponent,
   ],
   imports: [
     BrowserModule,

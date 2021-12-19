@@ -6,22 +6,12 @@
     </section>
 
     <section class="area-buttons">
-      <a routerLink="finances" class="finances">
-        <i class="material-icons">add_circle</i></a
-      >
-      <a class="add-finances"><i class="material-icons">search</i></a>
+      <a class="finances"> <i class="material-icons">check</i> Entrar </a>
+      <a routerLink="/cadastrar" class="add-finances">
+        <i class="material-icons">add_circle</i>Cadastrar
+      </a>
     </section>
   </main>
 
-  <mat-card class="form">
-    <mat-card-title>LOGIN</mat-card-title>
-    <form>
-      <mat-form-field class="w-100">
-        <input placeholder="Nome" name="name" autocomplete="off" />
-      </mat-form-field>
-      <mat-form-field class="w-100">
-        <input type="password" placeholder="Senha" name="senha" />
-      </mat-form-field>
-    </form>
-  </mat-card>
+  <app-login-user class="w-100"></app-login-user>
 </div>
