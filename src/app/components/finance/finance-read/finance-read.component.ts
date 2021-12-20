@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinanceReadComponent implements OnInit {
 
+  longText = `fermento em po`;
+
   constructor() { }
 
   ngOnInit(): void {

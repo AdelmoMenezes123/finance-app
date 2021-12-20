@@ -63,3 +63,7 @@ textarea {
 .v-middle {
   vertical-align: middle;
 }
+
+.gap-row-5 {
+  row-gap: 3rem !important;
+}

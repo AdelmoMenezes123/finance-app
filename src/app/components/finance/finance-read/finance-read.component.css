@@ -1,0 +1,53 @@
+.mat-toolbar {
+  margin-top: 25rem;
+}
+
+.mat-card {
+  width: 100%;
+  max-width: 400px;
+
+  background-color: var(--color-box-base);
+}
+
+.mat-card .mat-card-title {
+  background-color: var(--color-background);
+  padding: 20px 10px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mat-card .mat-card-subtitle {
+  font-size: 2rem;
+}
+
+.mat-card .mat-card-content {
+  white-space: pre-wrap;
+  margin-top: 3rem;
+}
+
+.mat-card button.editar {
+  background-color: var(--color-primary-light);
+  color: var(--color-box-base);
+  font-weight: 500;
+}
+.mat-card button.apagar {
+  background-color: var(--color-voltar);
+  color: var(--color-box-base);
+  font-weight: 500;
+}
+
+.mat-card button.editar:hover,
+.mat-card button.apagar:hover {
+  filter: brightness(0.8);
+}
+
+.mat-card .mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-card .mat-card-actions button {
+  width: 45%;
+}
