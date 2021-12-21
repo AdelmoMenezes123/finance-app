@@ -16,6 +16,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--color-background);
 }
 
 .mat-card .mat-card-subtitle {
@@ -50,4 +51,11 @@
 
 .mat-card .mat-card-actions button {
   width: 45%;
+}
+
+.green {
+  background: var(--color-secondary) !important;
+}
+.red {
+  background: var(--color-voltar) !important;
 }
