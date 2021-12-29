@@ -1,14 +1,26 @@
 <mat-card class="form">
   <mat-card-title>CADASTRAR</mat-card-title>
   <form>
-    <mat-form-field class="w-100">
-      <input placeholder="Usuario" name="name" autocomplete="off" />
+    <mat-form-field>
+      <label for="nome">Nome</label>
+      <input matInput id="nome" name="name" [(ngModel)]="user.nome"  autocomplete="off" />
     </mat-form-field>
-    <mat-form-field class="w-100">
-      <input placeholder="Nome" name="name" autocomplete="off" />
+    <mat-form-field>
+      <label for="sobrenome">Sobrenome</label>
+      <input matInput id="sobrenome" name="sobrenome" [(ngModel)]="user.sobrenome"  autocomplete="off" />
     </mat-form-field>
-    <mat-form-field class="w-100">
-      <input type="password" placeholder="Senha" name="senha" />
+    <mat-form-field>
+      <label for="login">Login</label>
+      <input matInput id="login" name="login" [(ngModel)]="user.login"  autocomplete="off" />
+    </mat-form-field>
+    <mat-form-field>
+      <label for="senha">Senha</label>
+      <input matInput type="password" id="senha" [(ngModel)]="user.senha"  name="senha" />
     </mat-form-field>
   </form>
+
+  <section class="area-buttons">
+    <button class="finances" (click)="createUser()"> <i class="material-icons">check</i>Salvar</button>
+    <button class="add-finances" (click)="irLogin()"> <i class="material-icons">arrow_back</i>Login</button>
+  </section>
 </mat-card>
