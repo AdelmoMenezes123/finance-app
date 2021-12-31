@@ -9,7 +9,7 @@ import { Usuario } from './usuario.model';
 })
 export class UsuarioService {
   constructor(private http: HttpClient,private snackBar: MatSnackBar,) { }
-  url = 'http://localhost:3001';
+  url = 'https://backend-finance.herokuapp.com';
 
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {

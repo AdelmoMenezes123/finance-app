@@ -1,5 +1,7 @@
+import { AuthService } from './../auth.service';
+import { Auth } from './../auth.model';
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from '../usuario.model';
+// import { Usuario } from '../usuario.model';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,20 +11,20 @@ import { Router } from '@angular/router';
 })
 export class LoginUserComponent implements OnInit {
 
-  public user: Usuario = {
-    nome: '',
-    sobrenome: '',
+  public user: Auth = {
     login: '',
     senha: ''
   }
   
-  constructor(private router: Router) {}
+  constructor(private router: Router,private authService:AuthService) {}
 
   ngOnInit(): void {
   }
 
   entrar():void{
-    console.log(this.user)
+    this.authService.create(this.user).subscribe(() => {
+      this.router.navigate(['/'])
+    })
   }
 
   irCadastro():void{

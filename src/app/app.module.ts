@@ -30,7 +30,7 @@ import { CadastroComponent } from './view/cadastro/cadastro.component';
 import { FinanceCrudComponent } from './view/finance-crud/finance-crud.component';
 import { CreateComponent } from './components/usuario-crud/create/create.component';
 import { LoginUserComponent } from './components/usuario-crud/login-user/login-user.component';
-
+import {SampleGuardService} from './sample-guard.service'
 
 @NgModule({
   declarations: [
@@ -63,7 +63,7 @@ import { LoginUserComponent } from './components/usuario-crud/login-user/login-u
     BrowserAnimationsModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [SampleGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
