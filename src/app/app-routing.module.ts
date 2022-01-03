@@ -1,3 +1,4 @@
+import { FinanceCreateComponent } from './components/finance/finance-create/finance-create.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './view/cadastro/cadastro.component';
@@ -25,6 +26,11 @@ const routes: Routes = [
     component: FinanceCrudComponent,
     canActivate: [SampleGuardService]
   },
+  {
+	  path:"add-finance",
+	  component:FinanceCreateComponent,
+	  canActivate:[SampleGuardService]
+  }
 ];
 
 @NgModule({

@@ -1,6 +1,10 @@
 export interface Finance {
   id?: number,
-  name: string,
-  price: number
+  produto: string;
+  valor: number;
+  data: Date;
+  quantidade: number;
+  status: boolean;
+  user?:string;
+  total?:string;
 }
-

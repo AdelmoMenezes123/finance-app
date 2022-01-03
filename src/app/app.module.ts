@@ -30,7 +30,9 @@ import { CadastroComponent } from './view/cadastro/cadastro.component';
 import { FinanceCrudComponent } from './view/finance-crud/finance-crud.component';
 import { CreateComponent } from './components/usuario-crud/create/create.component';
 import { LoginUserComponent } from './components/usuario-crud/login-user/login-user.component';
-import {SampleGuardService} from './sample-guard.service'
+import {SampleGuardService} from './sample-guard.service';
+import { FinanceCreateComponent } from './components/finance/finance-create/finance-create.component';
+import { FinanceListagemComponent } from './components/finance/finance-listagem/finance-listagem.component'
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import {SampleGuardService} from './sample-guard.service'
     FinanceCrudComponent,
     CreateComponent,
     LoginUserComponent,
+    FinanceCreateComponent,
+    FinanceListagemComponent,
   ],
   imports: [
     BrowserModule,
