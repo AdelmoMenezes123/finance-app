@@ -19,7 +19,6 @@ const EXAMPLE_DATA: Finance[] = [
   {produto: 'Ponto BR',valor:10.20, data:new Date(),quantidade:10,status:false,},
   {produto: 'Zindex',valor:10.20, data:new Date(),quantidade:10,status:false,},
 ];
-
 /**
  * Data source for the FinanceListagem view. This class should
  * encapsulate all logic for fetching and manipulating the displayed data

@@ -5,3 +5,15 @@
 .area-listagem{
 	margin-top: 25rem;
 }
+
+.mat-table{
+	background-color: var(--color-background);
+}
+
+.edit > i{
+	color:var(--color-primary);
+}
+
+.delete > i{
+	color: #e35e6d;
+}

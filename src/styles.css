@@ -67,3 +67,13 @@ textarea {
 .gap-row-5 {
   row-gap: 3rem !important;
 }
+
+.red-table{
+	background-color: #e35e6b48;
+	color: var(--color-text-title);
+}
+
+.green-table{
+	background-color: #04bf5848;
+	color: var(--color-text-title);
+}

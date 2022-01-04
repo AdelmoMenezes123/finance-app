@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -34,6 +34,10 @@ import {SampleGuardService} from './sample-guard.service';
 import { FinanceCreateComponent } from './components/finance/finance-create/finance-create.component';
 import { FinanceListagemComponent } from './components/finance/finance-listagem/finance-listagem.component'
 
+import localePt from '@angular/common/locales/pt'
+import {registerLocaleData} from '@angular/common'
+registerLocaleData(localePt);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +71,10 @@ import { FinanceListagemComponent } from './components/finance/finance-listagem/
     BrowserAnimationsModule,
     MatIconModule
   ],
-  providers: [SampleGuardService],
+  providers: [SampleGuardService,{
+	  provide:LOCALE_ID,
+	  useValue:'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,7 +17,7 @@ export class FinanceListagemComponent implements AfterViewInit {
   dataSource: FinanceListagemDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['data', 'produto','status','valor','quantidade','total'];
+  displayedColumns = ['data', 'produto','status','valor','quantidade','total', 'action'];
 
   constructor() {
     this.dataSource = new FinanceListagemDataSource();
